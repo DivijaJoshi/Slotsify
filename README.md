@@ -77,29 +77,29 @@ SlotName
 #### Auth Endpoints:
 
 *1.  Signup(user/admin)
-*2.  Login(user/admin)*
+2.  Login(user/admin)*
 
 #### Booking logic endpoints:
 
 *3.  Get my bookings(user)*
 *4.  Get all Bookings(user/admin)*
 *5.  Get Bookings by date(admin)
-*6.  Get available slots by date and Slot name(Resource name)(user/admin)
-*7.  Get slot types(Resource names like game room(chess) or (foosball) whichever are available)(user/admin)*
+6.  Get available slots by date and Slot name(Resource name)(user/admin)
+7.  Get slot types(Resource names like game room(chess) or (foosball) whichever are available)(user/admin)*
 
 #### User action endpoints:
 
 *8.  Book slot(user)
-*9.  Cancel booking(user)
-*10.  Slot checkin (user)
-*11.  Slot checkout (user)*
+9.  Cancel booking(user)
+10.  Slot checkin (user)
+11.  Slot checkout (user)*
 
 #### Admin action endpoints:
 
 *12.  Get all Users (admin)
-*13.  Delete users (admin)
-*14.  Add more slot types(admin) B1,B2,B3 etc (admin)
-*15.  Delete slot types (admin)*
+13.  Delete users (admin)
+14.  Add more slot types(admin) B1,B2,B3 etc (admin)
+15.  Delete slot types (admin)*
 
 ----------
 
