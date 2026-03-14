@@ -7,7 +7,7 @@ To solve this problem, I built a Slot Booking system that allows you to book slo
 *Here are some things I kept in mind for building it.*
 
 1. One can book slots of duration not more than 45 min to keep it convenient for others.
-2. Auto (checkin) or (checkout) when they start or finish using the slot to make it available for others to book. by f(in case they finish early mark the slot as available)
+2. Auto (checkin) or (checkout) when they start or finish using the slot to make it available for others to book.(in case they finish early mark the slot as available)
 3. Users should be able to view available slots filtering by Date and Resource ( for e.g. game room(chess) or game room (foosball))
 4. No two overlapping slots will be allowed to book.
 5. Users should be able to view their own bookings sorted by start time to track.
