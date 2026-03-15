@@ -105,7 +105,7 @@ Single string for Date and time made it easier for filtering and overlapping boo
 
 > **Step 1: User views all the available facility types to book (Different game rooms in this case chess, foosball etc) *{What to Book?}***
 >
-> **Step 2: Users views Available Slots for each facility filtered by a specific date. *{When to Book}***
+> **Step 2: Users view Available Slots for each facility filtered by a specific date. *{When to Book}***
 >
 > **Step 3: Users can book Slot by putting**
 > - ***SlotId of the Resource(which facility),***
