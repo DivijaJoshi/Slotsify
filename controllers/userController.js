@@ -138,7 +138,7 @@ const bookSlot=async(req,res,next)=>{
             StartTime: { $lt: new Date(reqEndTime) },
             EndTime: { $gt: new Date(reqStartTime) },
             status:'Booked'
-        }
+        })
 
         //if Booking Found then Slot overlaps, throw error
         if(existingBookings){
@@ -198,12 +198,12 @@ const checkInSlot=async(req,res,next)=>{
         
 
         //find booking by Id
-        const bookingFound=await Booking.findById({_id:bookingId})
+        const bookingFound=await Booking.findById({_id:bookingId, userId:req.user.id,})
 
 
         //throw error if booking not found
         if(!bookingFound){
-            const error=new Error('Booking not found')
+            const error=new Error('Booking not found by this bookingId or userId')
             error.code=404
             throw error
         }
