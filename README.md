@@ -66,7 +66,7 @@ SlotName
 #### Booking logic endpoints:
 
 3. Get my bookings(user)
-4. Get all Bookings(user/admin)
+4. Get all Bookings(admin)
 5. Get Bookings by date(admin)
 6. Get available slots by date and Slot name(Resource name)(user/admin)
 7. Get slot types(Resource names like game room(chess) or (foosball) whichever are available)(user/admin)
