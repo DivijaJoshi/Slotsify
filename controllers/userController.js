@@ -198,7 +198,7 @@ const checkInSlot=async(req,res,next)=>{
         
 
         //find booking by Id
-        const bookingFound=await Booking.findById({_id:bookingId, userId:req.user.id,})
+        const bookingFound=await Booking.findById({_id:bookingId, userId:req.user.id})
 
 
         //throw error if booking not found
