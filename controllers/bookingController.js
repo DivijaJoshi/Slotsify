@@ -205,11 +205,18 @@ const availableSlotsByDate=async (req,res,next)=>{
                 error.code=400
                 throw error
             }
-
+    
 
     //validate date in Format YYYY-MM-DD
     if(!isValidDate(date)){
         const error=new Error("Invalid date format (should follow Format YYYY-MM-DD)")
+        error.code=400
+        throw error
+    }
+
+    const slotExists=await Slot.findOne({_id:slotId})
+    if(!slotExists){
+        const error=new Error('SlotType does not exist')
         error.code=400
         throw error
     }
@@ -310,7 +317,7 @@ const getSlotTypes=async(req,res,next)=>{
         const slot=await Slot.find({})
         
         //throw error if no resources found
-        if(!slot){
+        if(slot.length===0){
             const error=new Error('No slots found')
             error.code=404
             throw error
